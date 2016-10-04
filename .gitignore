@@ -1,0 +1,10 @@
+*.pdf
+*.out
+*.nav
+*.log
+*.toc
+*.gz
+*.snm
+*.aux
+*checkpoints
+
