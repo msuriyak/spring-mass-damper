@@ -7,4 +7,7 @@
 *.snm
 *.aux
 *checkpoints
-
+*cache*
+images
+*.pyc
+Untitled*
