@@ -127,7 +127,7 @@ def test_rk4():
 
 ################ Plotting Options ################
 
-def plot(x, y, Title, xTitle, legend,option = False, show = True):
+def plot(x, y, Title, xTitle, legend, option = False, name = None ,show = True):
     '''
     Plots the values with linespecs set 
     '''
@@ -141,7 +141,7 @@ def plot(x, y, Title, xTitle, legend,option = False, show = True):
     plt.title(Title, family='sans-serif', style='italic',size=10)
     plt.legend(handles=[pos, vel], fontsize=10)
     if(option):
-        plt.savefig(Title + '.png') 
+        plt.savefig(name + '.png') 
     if(show):
         plt.show()
     

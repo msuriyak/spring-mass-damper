@@ -72,7 +72,7 @@ General second-order system is given by :
 \ddot{x} + 2\zeta\omega_0\dot{x} + \omega_0^2x = 0
 \label{sec_ord_system}
 \end{equation}
-
+where $\zeta$ is called damping ratio and $\omega_0$ is called natural frequency.
 From \ref{eom} we can get,
 \begin{equation}
 \ddot{x} + \frac{c}{m}\dot{x} + \frac{k}{m}x = 0
@@ -86,6 +86,60 @@ Comparing coefficient with \ref{sec_ord_system}, we get
 \omega &=& \sqrt{\frac{k}{m}}
 \label{def_omega}
 \end{eqnarray}
+
+\end{frame}
+
+\section{Types of responses}
+
+\begin{frame}
+\frametitle{Types of responses}
+\begin{itemize}
+	\item{Free response}\\
+	In free response the external force is 0. That is the equation of 
+	motion is given by :
+	$$ \ddot{x} + \frac{c}{m}\dot{x} + \frac{k}{m}x = 0 $$
+
+	\item{Forced dynamic response}\\
+	In forced response there exist a external force apart from spring force and 
+	viscous damping force. That is the equation of motion is given by :
+	$$ \ddot{x} + \frac{c}{m}\dot{x} + \frac{k}{m}x = F(\dot{x},x,t) $$
+
+\end{itemize}
+
+\end{frame}
+
+
+\section{State space model of the system}
+
+\begin{frame}
+\frametitle{State space model of the system}
+We can describe the system only by its position and velocity. Therefore the state-space model
+of the system is given by :
+
+\end{frame}
+
+\section{Classification}
+
+\begin{frame}
+\frametitle{Classification of system based on damping ratio}
+\begin{itemize}
+	\item{Under-damped system ($\zeta < 1$)}
+	\item{Critically damped system ($\zeta = 1$)}
+	\item{Over-damped system ($\zeta > 1$)}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Under-damped system}
+In under-damped system $\zeta$ is less than 1.
+The free response of the system is shown in the figure below$\phantom{}_{\ref{fig1}}$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth, height=0.6\textheight]{Free_response_underdamped.png}
+	\caption{Free response of a spring mass damper system}
+\end{figure}
+\label{fig1}
 
 \end{frame}
  
