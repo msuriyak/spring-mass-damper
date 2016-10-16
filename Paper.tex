@@ -9,7 +9,7 @@
 
 \title{Mass Spring Damper}
 \author{M Suriya Kumar\thanks{This document has been prepared as part of the requirements for the first course project}}
-\date{}
+\date{\today}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -22,7 +22,7 @@ This is one of the most widely studied topic under second order system. The syst
 \section{Dynamics}
 \begin{defn}
 \hfill \break
-\textbf{Linear viscous damping :} Linear damping occurs when a oscillatory variable is damped 
+\textbf{Linear viscous damping \cite{wiki} :} Linear damping occurs when a oscillatory variable is damped 
 by an influence that opposes changes in it, in direct proportion to the instantaneous rate of change 
 of the variable itself.
 \end{defn}
@@ -79,7 +79,7 @@ Comparing coefficient with \ref{sec_ord_system}, we get
 \end{eqnarray}
 
 \newpage
-\section{State space model of the system}
+\section{State space model of the system\cite{google}}
 
 We can describe the system only by its position and velocity. Therefore the state-space model
 of the system is given by :
@@ -250,12 +250,12 @@ Forced response is shown in the figure below$\phantom{}_{\ref{fig9}}$.
 
 
 
-\section{Detailed analysis of forced response}
+\section{Detailed analysis of forced response\cite{norman}}
 
 Solving the followwing equation,
 $$ m\ddot{x} + c\dot{x} + kx = F(\dot{x},x,t) $$
 
-we get 
+\noindent we get 
 $$ x(t) = x_p(t) + x_h(t)$$
 where $x_p(t)$ is the particular solution and $x_h(t)$ is the homogeneous solution\\
 \hfill \break
@@ -302,5 +302,8 @@ The ratio  of $X$ and $\eta_{st}$ is called dynamic magnifaction factor. \\
 We can see that when there is no damping, dynamic magnification factor approaches $\infty$ 
 when the system is forced at natural frequency. This phenomenon is called resonance. Which means 
 however small the static force($F_0$), $x$ $\rightarrow$ $\infty$ as time $\rightarrow$ $\infty$
+ 
+\bibliography{bib_file}{}
+\bibliographystyle{plain}
  
 \end{document}

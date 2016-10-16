@@ -1,6 +1,5 @@
 \documentclass[10pt]{beamer}
 \usetheme{PaloAlto}
-\usepackage[utf8]{inputenc}
 
 \usepackage{caption}
 \usepackage{graphicx}
@@ -28,7 +27,7 @@
 
 \begin{frame}
 \frametitle{Spring mass model with linear viscous damping}
-\textbf{Linear viscous damping :} Linear damping occurs when a oscillatory variable is damped 
+\textbf{Linear viscous damping\cite{wiki} :} Linear damping occurs when a oscillatory variable is damped 
 by an influence that opposes changes in it, in direct proportion to the instantaneous rate of change 
 of the variable itself.
 
@@ -112,7 +111,7 @@ Comparing coefficient with \ref{sec_ord_system}, we get
 \section{State space model of the system}
 
 \begin{frame}
-\frametitle{State space model of the system}
+\frametitle{State space model of the system\cite{google}}
 We can describe the system only by its position and velocity. Therefore the state-space model
 of the system is given by :
 
@@ -149,7 +148,7 @@ x_2\\
 \begin{frame}
 \frametitle{Under-damped system}
 In under-damped system $\zeta$ is less than 1.
-The free response of the system is shown in the figure below$\phantom{}_{\ref{fig1}}$.
+The free response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\centering
@@ -162,7 +161,7 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 
 
 \begin{frame}
-The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig2}}$.
+The forced response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l c}
@@ -176,7 +175,7 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \end{frame}
  
 \begin{frame}
-The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig3}}$.
+The forced response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l}
@@ -191,8 +190,8 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 
 \begin{frame}
 \frametitle{Critically-damped system}
-In under-damped system $\zeta$ is 1.
-The free response of the system is shown in the figure below$\phantom{}_{\ref{fig10}}$.
+In critically-damped system $\zeta$ is 1.
+The free response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\centering
@@ -205,7 +204,7 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 
 
 \begin{frame}
-The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig11}}$.
+The forced response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l c}
@@ -219,7 +218,7 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \end{frame}
  
 \begin{frame}
-The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig12}}$.
+The forced response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l}
@@ -235,7 +234,7 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \begin{frame}
 \frametitle{Over-damped system}
 In under-damped system $\zeta$ is more than 1.
-The free response of the system is shown in the figure below$\phantom{}_{\ref{fig4}}$.
+The free response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\centering
@@ -248,7 +247,7 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 
 
 \begin{frame}
-The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig5}}$.
+The forced response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l c}
@@ -262,7 +261,7 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \end{frame}
  
 \begin{frame}
-The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig6}}$.
+The forced response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l}
@@ -278,7 +277,7 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \begin{frame}
 \frametitle{Special case}
 A special case of the system arises when there is zero damping i.e $c = 0$ or $\zeta$ is zero. \\
-The free response of the system is shown in the figure below$\phantom{}_{\ref{fig7}}$.
+The free response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\centering
@@ -291,7 +290,7 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 
 
 \begin{frame}
-The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig5}}$.
+The forced response of the system is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l c}
@@ -308,7 +307,7 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 
 Upon forcing the system under natural frequency in this special case a resonance is observed. Under this
 forcing the positon variable explodes as time goes to $\infty$.\\
-Forced response is shown in the figure below$\phantom{}_{\ref{fig6}}$.
+Forced response is shown in the figure below.
 
 \begin{figure}[h]
 	\begin{tabular} {l}
@@ -323,7 +322,7 @@ Forced response is shown in the figure below$\phantom{}_{\ref{fig6}}$.
 \section{Dynamic response}
 
 \begin{frame}
-\frametitle{Detailed analysis of forced response}
+\frametitle{Detailed analysis of forced response\cite{norman}}
 Solving the followwing equation,
 $$ m\ddot{x} + c\dot{x} + kx = F(\dot{x},x,t) $$
 
@@ -386,6 +385,8 @@ however small the static force($F_0$), $x$ $\rightarrow$ $\infty$ as time $\righ
 
 \end{frame}
 
+\bibliography{bib_file}{}
+\bibliographystyle{plain}
  
 \end{document}
 
