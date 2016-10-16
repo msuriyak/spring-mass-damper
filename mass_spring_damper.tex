@@ -1,5 +1,4 @@
 \documentclass[10pt]{beamer}
-%\usetheme{Ilmenau}
 \usetheme{PaloAlto}
 \usepackage[utf8]{inputenc}
 
@@ -100,7 +99,7 @@ Comparing coefficient with \ref{sec_ord_system}, we get
 	motion is given by :
 	$$ \ddot{x} + \frac{c}{m}\dot{x} + \frac{k}{m}x = 0 $$
 
-	\item{Forced dynamic response}\\
+	\item{Forced/dynamic response}\\
 	In forced response there exist a external force apart from spring force and 
 	viscous damping force. That is the equation of motion is given by :
 	$$ \ddot{x} + \frac{c}{m}\dot{x} + \frac{k}{m}x = F(\dot{x},x,t) $$
@@ -116,6 +115,23 @@ Comparing coefficient with \ref{sec_ord_system}, we get
 \frametitle{State space model of the system}
 We can describe the system only by its position and velocity. Therefore the state-space model
 of the system is given by :
+
+\[
+\widetilde{x}=
+\begin{bmatrix}
+x \\
+\dot{x}
+\end{bmatrix}
+\]
+
+Therefore, equation of motion can be expressed as :
+\[
+\dot{\widetilde{x}}=
+\begin{bmatrix}
+x_2\\
+- \frac{c}{m}x_2 - \frac{k}{m}x_1 + F(x_2,x_1,t)
+\end{bmatrix}
+\]
 
 \end{frame}
 
@@ -171,6 +187,50 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \label{fig3} 
 
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Critically-damped system}
+In under-damped system $\zeta$ is 1.
+The free response of the system is shown in the figure below$\phantom{}_{\ref{fig10}}$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth, height=0.7\textheight]{Free_response_criticaldamped.png}
+	\caption{Free response of a spring mass damper system}
+\end{figure}
+\label{fig10}
+
+\end{frame}
+
+
+\begin{frame}
+The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig11}}$.
+
+\begin{figure}[h]
+	\begin{tabular} {l c}
+	\includegraphics[width=0.45\textwidth, height=0.5\textheight]{Forced_response_criticaldamped_under.png} &
+	\includegraphics[width=0.45\textwidth, height=0.5\textheight]{Forced_response_criticaldamped_over.png} 
+	\end{tabular}
+	\caption{Forced response of a spring mass damper system}
+\end{figure}
+\label{fig11}
+
+\end{frame}
+ 
+\begin{frame}
+The forced response of the system is shown in the figure below$\phantom{}_{\ref{fig12}}$.
+
+\begin{figure}[h]
+	\begin{tabular} {l}
+	\includegraphics[width=0.8\textwidth, height=0.7\textheight]{Forced_response_criticaldamped_natural.png} 
+	\end{tabular}
+	\caption{Forced response of a spring mass damper system}
+\end{figure}
+\label{fig12} 
+
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Over-damped system}
@@ -274,7 +334,7 @@ where $x_p(t)$ is the particular solution and $x_h(t)$ is the homogeneous soluti
 \end{frame}
 
 \begin{frame}
-\frametitle{Hoarmonic forcing}
+\frametitle{Harmonic forcing}
 Under harmonic forcing equation of motion is given by,
 
 \begin{eqnarray}
