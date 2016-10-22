@@ -1,7 +1,7 @@
 ################ Project 1 SDES (AE663) ################
 
 import math
-
+import os
 ################ Implementation of RK4 ################
 def rk4(f, x0, t0, t1, n, param = []):
     '''
@@ -141,7 +141,9 @@ def plot(x, y, Title, xTitle, legend, option = False, name = None ,show = True):
     plt.title(Title, family='sans-serif', style='italic',size=10)
     plt.legend(handles=[pos, vel], fontsize=10)
     if(option):
-        plt.savefig(name + '.png') 
+        if not os.path.exists('../output'):
+            os.mkdir('../output')
+        plt.savefig('../output/' + name + '.png') 
     if(show):
         plt.show()
     

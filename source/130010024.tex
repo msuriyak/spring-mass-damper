@@ -5,10 +5,13 @@
 \usepackage{graphicx}
 \usepackage{float}
 
+\usepackage{hyperref}
 \newtheorem*{defn}{Definition}
 
+% Roll number : 130010024 
+% Name : M Suriya Kumar
 \title{Mass Spring Damper}
-\author{M Suriya Kumar\thanks{This document has been prepared as part of the requirements for the first course project}}
+\author{M Suriya Kumar, 130010024\thanks{This document has been prepared as part of the requirements for the first course project}}
 \date{\today}
 \begin{document}
 \maketitle
@@ -17,7 +20,8 @@ This document gives brief familiarity with spring mass damper system. Complete m
 the system is shown. Followed by that representative simulations for various cases is also shown.
 \end{abstract}
 \section{Introduction}
-This is one of the most widely studied topic under second order system. The system consists of a mass attached to a spring and damper.  
+This is one of the most widely studied topic under second order system. The system consists of a mass attached to a spring and damper. All the files
+associated to this document can be found in this github repository : \url{https://github.com/msuriyak/spring-mass-damper}.
 
 \section{Dynamics}
 \begin{defn}
@@ -30,7 +34,7 @@ of the variable itself.
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[scale=0.8]{spring_mass_damper.png}
-	\caption{Mass attached to a spring and damper}
+	\caption{Mass attached to a spring and damper (130010024)}
 	\centering
 	\end{center}
 \end{figure}
@@ -132,8 +136,8 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 \begin{figure}[H]
 	\centering
 	\centering
-	\includegraphics[scale=0.5]{Free_response_underdamped.png}
-	\caption{Free response of a spring mass damper system}
+	\includegraphics[scale=0.5]{../output/Free_response_underdamped.png}
+	\caption{Free response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig1}
 
@@ -142,11 +146,11 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \begin{figure}[H]
 	\centering
 	\begin{tabular} {l}
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_underdamped_under.png} \\
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_underdamped_over.png} \\
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_underdamped_natural.png} 
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_underdamped_under.png} \\
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_underdamped_over.png} \\
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_underdamped_natural.png} 
 	\end{tabular}
-	\caption{Forced response of a spring mass damper system}
+	\caption{Forced response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig2}
 
@@ -158,8 +162,8 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 \begin{figure}[H]
 	\centering
 	\centering
-	\includegraphics[scale=0.5]{Free_response_criticaldamped.png}
-	\caption{Free response of a spring mass damper system}
+	\includegraphics[scale=0.5]{../output/Free_response_criticaldamped.png}
+	\caption{Free response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig10}
 
@@ -169,11 +173,11 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \begin{figure}[H]
 	\centering
 	\begin{tabular} {l}
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_criticaldamped_under.png} \\
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_criticaldamped_over.png} \\
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_criticaldamped_natural.png} 
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_criticaldamped_under.png} \\
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_criticaldamped_over.png} \\
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_criticaldamped_natural.png} 
 	\end{tabular}
-	\caption{Forced response of a spring mass damper system}
+	\caption{Forced response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig11}
 
@@ -187,8 +191,8 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 \begin{figure}[H]
 	\centering
 	\centering
-	\includegraphics[scale=0.5]{Free_response_overdamped.png}
-	\caption{Free response of a spring mass damper system}
+	\includegraphics[scale=0.5]{../output/Free_response_overdamped.png}
+	\caption{Free response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig4}
 
@@ -198,11 +202,11 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \begin{figure}[H]
 	\centering
 	\begin{tabular} {l}
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_overdamped_under.png} \\
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_overdamped_over.png} \\
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_overdamped_natural.png} 
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_overdamped_under.png} \\
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_overdamped_over.png} \\
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_overdamped_natural.png} 
 	\end{tabular}
-	\caption{Forced response of a spring mass damper system}
+	\caption{Forced response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig5}
 
@@ -214,8 +218,8 @@ The free response of the system is shown in the figure below$\phantom{}_{\ref{fi
 \begin{figure}[H]
 	\centering
 	\centering
-	\includegraphics[scale=0.5]{Free_response_special.png}
-	\caption{Free response of a spring mass damper system}
+	\includegraphics[scale=0.5]{../output/Free_response_special.png}
+	\caption{Free response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig7}
 
@@ -225,10 +229,10 @@ The forced response of the system is shown in the figure below$\phantom{}_{\ref{
 \begin{figure}[H]
 	\centering
 	\begin{tabular} {l}
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_special_under.png} \\
-	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{Forced_response_special_over.png} 
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_special_under.png} \\
+	\includegraphics[width=0.8\textwidth, height=0.25\textheight]{../output/Forced_response_special_over.png} 
 	\end{tabular}
-	\caption{Forced response of a spring mass damper system}
+	\caption{Forced response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig8}
 
@@ -241,9 +245,9 @@ Forced response is shown in the figure below$\phantom{}_{\ref{fig9}}$.
 \begin{figure}[H]
 	\centering
 	\begin{tabular} {l}
-	\includegraphics[scale=0.5]{Forced_response_special_natural.png} 
+	\includegraphics[scale=0.5]{../output/Forced_response_special_natural.png} 
 	\end{tabular}
-	\caption{Forced response of a spring mass damper system}
+	\caption{Forced response of a spring mass damper system (130010024)}
 \end{figure}
 \label{fig9} 
 
