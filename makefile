@@ -1,29 +1,21 @@
-FILES := Paper.pdf 
-AUXFILES := $(FILES:.pdf=.aux)
-LOGFILES := $(FILES:.pdf=.log)
-BBLFILES := $(FILES:.pdf=.bbl)
-BLGFILES := $(FILES:.pdf=.blg)
-PICS := $(wildcard *.png)
-PICSDEL := $(filter-out spring_mass_damper.png,$(PICS))
-PYC := $(wildcard *.pyc)
+main :   
+	cd source && python main.py
+	jupyter nbconvert --to html source/130010024.ipynb
+	mv source/130010024.html output/
+	make paper
 
-main : ../source/spring_mass_damper.py ../source/main.py
-	python main.py
-	make pdf
+paper: 
+	cp source/bib_file.bib . 
+	pdflatex -output-directory output source/130010024.tex 
+	bibtex output/130010024.aux
+	pdflatex -output-directory output source/130010024.tex
+	pdflatex -output-directory output source/130010024.tex
+	rm bib_file.bib
 
-pdf : $(FILES:.pdf=.tex) 
-	make Paper.pdf
+.PHONY: clean tests
 
-%.pdf: %.tex 
-	pdflatex -output-directory ../output $< 
-	bibtex ../output/`echo $< |cut -d "." -f1`.aux
-	pdflatex -output-directory ../output $<
-	pdflatex -output-directory ../output $<
-
-.PHONY: clean clean-all
-clean-all:
-	$(RM) $(AUXFILES) $(FILES) $(LOGFILES) $(BBLFILES) $(BLGFILES) $(OTHERS) $(PICSDEL) $(PYC)
-
+test:
+	pytest source/spring_mass_damper.py
 clean:	 
-	$(RM) $(AUXFILES) $(LOGFILES) $(BBLFILES) $(BLGFILES) $(OTHERS) $(PICSDEL) $(PYC)
-
+	rm -rf output
+	rm -rf source/__pycache__

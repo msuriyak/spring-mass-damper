@@ -1,6 +1,6 @@
 import spring_mass_damper as smd
 import math
-
+import os
 ################ Plots for the tex file ################
 
 def plot_underdamped():
@@ -94,6 +94,8 @@ def plot_special_case():
 ################ Main ################
 
 def main():
+    if not os.path.exists('../output'):
+            os.mkdir('../output')
     plot_underdamped()
     plot_critically_damped()
     plot_overdamped()
